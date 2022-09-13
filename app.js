@@ -7,7 +7,7 @@ let i = 0;
 const uid = uuidv4();
 
 app.use(async ctx => {
-  ctx.body = `Hello World\nThis is the ${i++}-th connection to:\n${uid}`;
+  ctx.body = `Hello World\nThis is the ${i++}-th connection to:\n${uid}\n\n`;
   ctx.status = 200;
 });
 
